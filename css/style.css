@@ -5,8 +5,8 @@ body { margin: 0; }
 /* GLOBAL COLORS */
 * { box-sizing: border-box; }
 body { color: rgba(0, 0, 0, 0.8); }
-a { color: rgba(0, 102, 204, 1); }
-a:hover { color: rgba(0, 51, 153, 1); }
+a { color: rgb(139, 184, 230); }
+a:hover { color: rgb(255, 255, 255); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
@@ -17,7 +17,7 @@ body {
 
 /* HEADER */
 header {
-    background-color: rgba(0, 102, 204, 1);
+    background-color: rgb(66, 97, 106);
     color: rgba(0, 0, 0, 0.8);
     padding: 1em;
     display: grid;
@@ -26,7 +26,7 @@ header {
 }
 
 header a {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(66, 97, 106);
     text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ header a:hover {
 
 /* MAIN */
 main {
-    background: rgba(0,0,0,.05);
+    background: rgba(185, 185, 185, 0.767);
 }
 
 section {
@@ -107,7 +107,7 @@ aside {
 
 /* HERO SECTION */
 .hero {
-    background-color: rgba(0, 102, 204, 1);
+    background-color: rgb(100, 125, 113);
     text-align: center;
     color: white;
     padding: 6em 1em;
@@ -130,6 +130,7 @@ aside {
     padding: 6em 1em;
     display: grid;
     justify-content: center;
+    background-color: rgb(66, 97, 106);
 }
 
 .courses ul {
@@ -140,12 +141,27 @@ aside {
 
 .courses h3 {
     text-align: center;
+    color: white;
 }
 
 /* STYLING FOR SUB PAGES */
 .page-sub .hero {
     background-color: rgba(0, 0, 0, .1);
     color: rgba(0, 0, 0, .8);
+}
+
+/* STYLING FOR HOME PAGE */
+.page-home .hero {
+    background-image: url('../img/seagreenblue.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 30vh 1em 20vh 1em;
+}
+
+.page-home header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
 }
 
 /* COURSEWORK */
