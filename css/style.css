@@ -103,6 +103,7 @@ aside {
 .social-nav a {
     display: block;
     padding: 1em;
+    background-color: rgb(66, 97, 106);
 }
 
 /* HERO SECTION */
@@ -146,8 +147,21 @@ aside {
 
 /* STYLING FOR SUB PAGES */
 .page-sub .hero {
-    background-color: rgba(0, 0, 0, .1);
-    color: rgba(0, 0, 0, .8);
+    background-color: rgba(66, 97, 106, .75);
+    color: rgba(255, 255, 255, 1);
+}
+
+.coursework {
+    /* background-color: rgb(178, 203, 200); */
+    background-color: rgb(66, 97, 106);
+}
+
+.projects {
+    color: white;
+}
+
+.page-sub header {
+    background-color: rgb(178, 203, 200);
 }
 
 /* STYLING FOR HOME PAGE */
