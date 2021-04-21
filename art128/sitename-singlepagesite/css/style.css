@@ -292,7 +292,12 @@ body.demo::before {
 
 /* SITE HEADER */
 .site-header {
-    padding: 1em 0;
+    background: #fff;
+    border-bottom: 0px solid #ccc;
+}
+
+.site-header .container {
+    padding-top: .5em;
 }
 
 /* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
@@ -300,6 +305,43 @@ body.demo::before {
     .site-header .container {
     display: flex;
     justify-content: space-between;
+    padding-top: .75em;
+    }
+    .site-nav ul {
+        border-top: none;
+        margin: 0;
+        padding: 0;
+    }
+    .site-nav ul li {
+        display: inline-block;
+        /* DROP DOWN MENU */
+        /* stack nested lists */
+        /* hide nested lists by default */
+        /* show nested lists on hover */
+        /* SELECTED STATE */
+    }
+    .site-nav ul li a {
+        margin: 0 .5em;
+        padding: 0.85em 0.5em 0.75em 0.5em;
+    }
+    .site-nav ul li li {
+        display: block;
+    }
+    .site-nav ul li ul {
+        text-align: left;
+        position: absolute;
+        z-index: 100;
+        left: -9000px;
+        background: #fff;
+    }
+    .site-nav ul li ul a {
+        color: #999;
+    }
+    .site-nav ul li.selected a, .site-nav ul li.current-menu-item li a {
+        font-weight: bold;
+    }
+    .site-nav ul li.selected li a, .site-nav ul li.current-menu-item li a {
+        font-weight: normal;
     }
 }
 
@@ -315,30 +357,76 @@ body.demo::before {
 }
 
 /* LOGO AREA */
+.site-id {
+    text-align: center;
+}
 .site-id h1 {
     font-size: 1.5em;
+    font-weight: normal;
+    font-style: normal;
     margin: 0;
-    padding-top: .55em;
-    text-align: center;
+    color: #999;
+    padding: 0.5em 0 0.4em 0;
+}
+
+.site-id h1 a {
+    font-weight: bold;
+    display: inline-block;
 }
 
 /* SITE NAV */
-.site-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.site-nav a {
-    display: block;
-    padding: 1em;
+.site-nav {
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .site-nav .menu-button {
     display: none;
 }
+
+.site-nav ul {
+    margin: 0;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+.site-nave ul li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.site-nav ul li li {
+    display: inline-flex;
+}
+
+.site-nav ul li a {
+    display: block;
+    padding: .5em .75em .4em .75em;
+}
+
+.site-nav ul li ul {
+    border-top: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .site-nav ul li, .site-nav ul li ul li {
+        display: block;
+    }
+}
+
+/* Default Site-Navigation (footer only) */
+.site-footer .site-nav ul {
+    border-top: none;
+    margin: 0;
+}
+
+/* .site-nav a {
+    display: block;
+    padding: .85em .5em .75em .5em;
+} */
+
 
 /* SECTIONS */
 section {
@@ -362,6 +450,25 @@ section {
     margin-left: auto;
     margin-right: auto;
 } */
+
+/* FOOTER ONLY */
+.site-footer {
+    background: #fff;
+    border-top: 0px solid #ccc;
+}
+
+.site-footer .container {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+@media (min-width: 768px) {
+    .site-footer .container {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0.5em;
+    }
+}
 
 /* Hero Sections */
 .container .hero {
@@ -565,8 +672,86 @@ form input[type=reset]:hover {
     border-color: rgba(0, 0, 153, 1);
 }
 
+/* CUSTOM SITE CSS */
+/* .section-title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin: .5em auto;
+    border-bottom: 3px solid rgba(0, 0, 0, .2);
+} */
+
+#about {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+#contact {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* STICKY header - works with a class="sticky" on .site-header */
+.site-header.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.site-header.sticky + .site-main {
+    padding-top: 3em;
+}
+
+/* Colored Sections */
+section.superlightgrey {
+    background: #f9f9f9;
+    padding: 5em 0 2em 0;
+}
+
+section.lightgrey {
+    background: #e0e0e0;
+    padding: 5em 0 2em 0;
+}
+
+section.darkgrey {
+    background: #222;
+    color: #fff;
+    padding: 5em 0 2em 0;
+}
+
+section.darkgrey a.button {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+section.darkgrey a.button:hover {
+    background-color: white;
+}
+
+section.darkgrey a.button.alt {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+section.darkgrey a.button.alt:hover {
+    background-color: white;
+    color: black;
+    border-color: transparent;
+}
+
+section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
+    padding: 6em 1em 5em 1em;
+}
+/* LEFT OFF HERE LEFT OFF HERE FROM FRIDAY */
+
 /* OPTIONAL Animated Toggle-Nav Menu */
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
     .toggle-nav.animated ul {
       display: block;
       max-height: 0;
@@ -600,4 +785,4 @@ form input[type=reset]:hover {
     .toggle-nav.animated[data-navstate="open"] li a {
       padding: 0.75em;
     }
-  } */
+  }
