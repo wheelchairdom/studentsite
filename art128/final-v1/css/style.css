@@ -975,7 +975,7 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     .person-5 {
         grid-column-start: 1;
         grid-column-end: 4;
-        grid-row-start: 7;
+        grid-row-start: 6;
     }
     
     .person-5 h3 {
