@@ -173,7 +173,7 @@ body {margin: 0; }
 
 /* CONTAINER */
 .container {
-    max-width: 1000px;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 0 4%;
 }
@@ -478,7 +478,7 @@ section {
   }
   
   .hero {
-      background: #ddd;
+      background: rgb(255, 255, 255);
       border-top: none;
       padding: 4em 1em 3em 1em;
       margin-bottom: 1.5em;
@@ -486,9 +486,13 @@ section {
   
   .hero h1,
   .hero h2 {
-      font-size: 3em;
+      font-size: 8em;
       line-height: 1.1em;
-      max-width: 10em;
+      max-width: 7em;
+      margin: 0 auto;
+      background-color: rgb(255, 255, 255);
+      font-family: 'Jura', sans-serif;
+      padding: 0em 0em 0em .75em;
   }
   
   .hero p {
@@ -748,6 +752,7 @@ section.darkgrey a.button.alt:hover {
 section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     padding: 6em 1em 5em 1em;
 }
+
 /* LEFT OFF HERE LEFT OFF HERE FROM FRIDAY */
 
 /* OPTIONAL Animated Toggle-Nav Menu */
@@ -786,3 +791,220 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
       padding: 0.75em;
     }
   }
+
+  .hero.text-align.left {
+      text-align: left;
+  }
+
+  .subhero.text-align.left {
+      text-align: left;
+  }
+
+  .subhero.text-align.right {
+      text-align: right;
+  }
+
+  section.subhero.text-align.left {
+      padding: 6em 0em 0.5em 0em;
+  }
+
+  section.subhero.text-align.right {
+    padding: 0.5em 0em 3em 0em;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.menu.item.text-align.left {
+    padding: 1em 0em 1em 0em;
+}
+
+.menu.item.two h1 {
+    font-size: 5em;
+    padding: 0.15em 0em 0em 2em;
+    font-family: 'EB Garamond', serif;
+    margin: .1em 0;
+}
+
+.menu.item.three h1 {
+    font-size: 5em;
+    padding: 0em 0em 0em 7em;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: .1em 0;
+}
+
+.menu.item.four h1 {
+    font-size: 8em;
+    padding: 0em 0em 0em .65em;
+    font-family: 'Jura', sans-serif;
+    font-style: italic;
+    margin: .1em 0;
+}
+
+.menu.item.five h1 {
+    font-size: 5em;
+    padding: 0em 0em 0em 8.25em;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: .1em 0em .5em 0em;
+}
+
+/* .hero h1 {
+    font-size: 8em;
+    padding: 0em 0em 0em .75em;
+} */
+
+/* Grid */
+
+@media (min-width: 768px) {
+    .mygrid {
+      /* background-color: rgba(255, 0, 0, 0.1); */
+      display: grid;
+      grid-template-columns: repeat(12, 8.333%);
+      grid-template-rows: repeat(15, 10vh);
+      font-size: 14px;
+    }
+  
+    .person-1 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+    }
+
+    .person-1 h3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-size: 14px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-1 h5 {
+        font-size: 14px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-1 p {
+        font-size: 12px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-2 {
+        grid-column-start: 6;
+        grid-column-end: 9;
+    }
+
+    .person-2 h3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-size: 14px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-2 h5 {
+        font-size: 14px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-2 p {
+        font-size: 12px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+    
+    .person-3 {
+        grid-column-start: 11;
+        grid-column-end: 13;
+        grid-row-start: 3;
+    }
+    
+    .person-3 h3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-size: 14px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-3 h5 {
+        font-size: 14px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-3 p {
+        font-size: 12px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-4 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 5;
+    }
+    
+    .person-4 h3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-size: 14px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-4 h5 {
+        font-size: 14px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-4 p {
+        font-size: 12px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-5 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 7;
+    }
+    
+    .person-5 h3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-size: 14px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-5 h5 {
+        font-size: 14px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    .person-5 p {
+        font-size: 12px;
+        margin: .25em auto;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+    }
+    
+    .person {
+      margin-bottom: 6em;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
