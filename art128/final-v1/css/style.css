@@ -487,6 +487,8 @@ section {
   .hero h1,
   .hero h2 {
       font-size: 8em;
+      font-size: 8vw;
+      font-size: clamp(3em, 8vw, 8em);
       line-height: 1.1em;
       max-width: 7em;
       margin: 0 auto;
@@ -833,7 +835,8 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
 
 .menu.item.three h1 {
     font-size: 5em;
-    padding: 0em 0em 0em 7em;
+    padding: 0em 2em 0em 0em;
+    text-align: right;
     font-family: 'Josefin Sans', sans-serif;
     margin: .1em 0;
 }
@@ -848,7 +851,8 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
 
 .menu.item.five h1 {
     font-size: 5em;
-    padding: 0em 0em 0em 8.25em;
+    padding: 0em 1em 0em 0em;
+    text-align: right;
     font-family: 'Gloria Hallelujah', cursive;
     margin: .1em 0em .5em 0em;
 }
