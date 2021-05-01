@@ -90,9 +90,10 @@ p {
 a {
     color: black;
     text-decoration: none;
+    transition: .2s; /* Animation */
 }
 a:hover {
-    color: ivory;
+    color: rgba(246, 149, 32, 1);
     text-decoration: none;
 }
 
@@ -831,6 +832,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     padding: 0.15em 0em 0em 2em;
     font-family: 'EB Garamond', serif;
     margin: .1em 0;
+    transition: transform .2s; /* Animation */
+}
+
+.menu.item.two h1:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .menu.item.three h1 {
@@ -839,6 +845,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     text-align: right;
     font-family: 'Josefin Sans', sans-serif;
     margin: .1em 0;
+    transition: transform .2s; /* Animation */
+}
+
+.menu.item.three h1:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .menu.item.four h1 {
@@ -848,6 +859,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     font-family: 'Jura', sans-serif;
     font-style: italic;
     margin: .1em 0;
+    transition: transform .2s; /* Animation */
+}
+
+.menu.item.four h1:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .menu.item.five h1 {
@@ -856,6 +872,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     text-align: right;
     font-family: 'Gloria Hallelujah', cursive;
     margin: .1em 0em .5em 0em;
+    transition: transform .2s; /* Animation */
+}
+
+.menu.item.five h1:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 /* .hero h1 {
@@ -875,9 +896,14 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     }
   
     .person-1 {
-      grid-column-start: 2;
-      grid-column-end: 4;
-      grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        transition: transform .2s; /* Animation */
+    }
+
+    .person-1:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
 
     .person-1 h3 {
@@ -898,11 +924,17 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         font-size: 12px;
         margin: .25em auto;
         font-family: 'Libre Franklin', sans-serif;
+        background-color: rgba(255, 255, 255, 0.75);
     }
 
     .person-2 {
         grid-column-start: 6;
         grid-column-end: 9;
+        transition: transform .2s; /* Animation */
+    }
+
+    .person-2:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
 
     .person-2 h3 {
@@ -929,6 +961,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 11;
         grid-column-end: 13;
         grid-row-start: 3;
+        transition: transform .2s; /* Animation */
+    }
+
+    .person-3:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     
     .person-3 h3 {
@@ -955,6 +992,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 7;
         grid-column-end: 9;
         grid-row-start: 5;
+        transition: transform .2s; /* Animation */
+    }
+
+    .person-4:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     
     .person-4 h3 {
@@ -981,6 +1023,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 6;
+        transition: transform .2s; /* Animation */
+    }
+
+    .person-5:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     
     .person-5 h3 {
@@ -1028,6 +1075,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 2;
         grid-column-end: 5;
         grid-row-start: 2;
+        transition: transform .2s; /* Animation */
+    }
+
+    .scene-1:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
 
     .scene-1 h3 {
@@ -1053,6 +1105,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     .scene-2 {
         grid-column-start: 8;
         grid-column-end: 12;
+        transition: transform .2s; /* Animation */
+    }
+
+    .scene-2:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
 
     .scene-2 h3 {
@@ -1079,6 +1136,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 8;
         grid-column-end: 13;
         grid-row-start: 4;
+        transition: transform .2s; /* Animation */
+    }
+
+    .scene-3:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     
     .scene-3 h3 {
@@ -1105,6 +1167,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 6;
+        transition: transform .2s; /* Animation */
+    }
+
+    .scene-4:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     
     .scene-4 h3 {
@@ -1256,6 +1323,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 2;
+        transition: transform .2s; /* Animation */
+    }
+
+    .series-1:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
 
     .series-1 h3 {
@@ -1281,6 +1353,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     .series-2 {
         grid-column-start: 8;
         grid-column-end: 14;
+        transition: transform .2s; /* Animation */
+    }
+
+    .series-2:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
 
     .series-2 h3 {
@@ -1307,6 +1384,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 13;
         grid-column-end: 17;
         grid-row-start: 4;
+        transition: transform .2s; /* Animation */
+    }
+
+    .series-3:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     
     .series-3 h3 {
@@ -1333,6 +1415,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 4;
         grid-column-end: 10;
         grid-row-start: 6;
+        transition: transform .2s; /* Animation */
+    }
+
+    .series-4:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     
     .series-4 h3 {
@@ -1358,6 +1445,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     .series-about {
         grid-column: 7/11;
         grid-row-start: 4;
+        transition: transform .2s; /* Animation */
+    }
+
+    .series-about:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     
     .series-about h3 {
@@ -1407,6 +1499,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 1;
         grid-column-end: 6;
         grid-row-start: 1;
+        transition: transform .2s; /* Animation */
+    }
+
+    .connect-1:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
 
     .connect-1 h3 {
@@ -1433,6 +1530,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 1;
         grid-column-end: 6;
         grid-row-start: 4;
+        transition: transform .2s; /* Animation */
+    }
+
+    .connect-2:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
 
     .connect-2 h3 {
@@ -1459,6 +1561,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 12;
         grid-column-end: 17;
         grid-row-start: 1;
+        transition: transform .2s; /* Animation */
+    }
+
+    .connect-3:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     
     .connect-3 h3 {
@@ -1485,6 +1592,11 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 12;
         grid-column-end: 17;
         grid-row-start: 4;
+        transition: transform .2s; /* Animation */
+    }
+
+    .connect-4:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     
     .connect-4 h3 {
@@ -1510,6 +1622,12 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     .connect-5 {
         grid-column: 6/12;
         grid-row-start: 1;
+        width: 100%;
+        transition: transform .2s; /* Animation */
+    }
+
+    .connect-5:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
     
     .connect-5 h3 {
