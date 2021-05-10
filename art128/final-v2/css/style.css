@@ -899,29 +899,40 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 2;
         grid-column-end: 4;
         grid-row-start: 2;
-        background-color: #f5f5f5;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
-    .person-1:hover .desc, .person-1:focus {
+    .person {
+        transition: all .4s ease;
+    }
+
+    .person .desc {
+        opacity: 0;
+        transition: all .4s ease .2s;
+    }
+    
+    .person:hover {
+        /* padding: 30px 20px 20px; */
+        /* background: rgba(0, 0, 0, 0.7); */
+        transform: scale(1.05);
+    }
+
+    .person:hover .desc {
         opacity: 1;
     }
 
-    .person-1 h3 {
+    .person h3 {
         font-size: 14px;
         margin: .25em auto;
         font-family: 'Libre Franklin', sans-serif;
     }
 
-    .person-1 h5 {
+    .person h5 {
         font-size: 14px;
         margin: .25em auto;
         font-family: 'Libre Franklin', sans-serif;
     }
 
-    .person-1 p {
+    .person p {
         font-size: 12px;
         margin: .25em auto;
         font-family: 'Libre Franklin', sans-serif;
@@ -929,145 +940,51 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
 
 /* opacity 0.01 for accessibility */
 /* adjust the styles like height,padding to match your design*/
-    .person-1 .desc {
-        opacity: 0.01;
-        min-height: auto;
-        height: 100%;
-        padding: 30px 20px 20px;
-        transition: all 0.3s ease;
-        background: rgba(0, 0, 0, 0.7);
-        color: #fff;
-    }
+    
 
     .person-2 {
         grid-column-start: 6;
         grid-column-end: 9;
-        transition: transform .2s; /* Animation */
-    }
-
-    .person-2:hover {
-        transform: scale(1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.5), 0 12px 40px 0 rgba(0, 0, 0, 0.);
     }
 
     .person-2 h3 {
         grid-column-start: 2;
         grid-column-end: 3;
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .person-2 h5 {
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .person-2 p {
-        font-size: 12px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
     }
     
     .person-3 {
         grid-column-start: 11;
         grid-column-end: 13;
         grid-row-start: 3;
-        transition: transform .2s; /* Animation */
     }
 
-    .person-3:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
     
     .person-3 h3 {
         grid-column-start: 2;
         grid-column-end: 3;
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
     }
 
-    .person-3 h5 {
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .person-3 p {
-        font-size: 12px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
 
     .person-4 {
         grid-column-start: 7;
         grid-column-end: 9;
         grid-row-start: 5;
-        transition: transform .2s; /* Animation */
     }
 
-    .person-4:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
+
     
     .person-4 h3 {
         grid-column-start: 2;
         grid-column-end: 3;
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .person-4 h5 {
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .person-4 p {
-        font-size: 12px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
     }
 
     .person-5 {
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 6;
-        transition: transform .2s; /* Animation */
     }
 
-    .person-5:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
-    
-    .person-5 h3 {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .person-5 h5 {
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .person-5 p {
-        font-size: 12px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    }
-    
-    .person {
-      margin-bottom: 6em;
-    }
+}
     
     img {
       max-width: 100%;
@@ -1088,28 +1005,40 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 2;
         grid-column-end: 5;
         grid-row-start: 2;
-        transition: transform .2s; /* Animation */
     }
 
-    .scene-1:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    .scenes {
+        transition: all .4s ease;
     }
 
-    .scene-1 h3 {
-        grid-column-start: 2;
-        grid-column-end: 3;
+    .scenes .desc {
+        opacity: 0;
+        transition: all .4s ease .2s;
+    }
+    
+    .scenes:hover {
+        /* padding: 30px 20px 20px; */
+        /* background: rgba(0, 0, 0, 0.7); */
+        transform: scale(1.05);
+    }
+
+    .scenes:hover .desc {
+        opacity: 1;
+    }
+
+    .scenes h3 {
         font-size: 14px;
         margin: .25em auto;
         font-family: 'Libre Franklin', sans-serif;
     }
 
-    .scene-1 h5 {
+    .scenes h5 {
         font-size: 14px;
         margin: .25em auto;
         font-family: 'Libre Franklin', sans-serif;
     }
 
-    .scene-1 p {
+    .scenes p {
         font-size: 12px;
         margin: .25em auto;
         font-family: 'Libre Franklin', sans-serif;
@@ -1118,93 +1047,18 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     .scene-2 {
         grid-column-start: 8;
         grid-column-end: 12;
-        transition: transform .2s; /* Animation */
-    }
-
-    .scene-2:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
-
-    .scene-2 h3 {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .scene-2 h5 {
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .scene-2 p {
-        font-size: 12px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
     }
     
     .scene-3 {
         grid-column-start: 8;
         grid-column-end: 13;
         grid-row-start: 4;
-        transition: transform .2s; /* Animation */
-    }
-
-    .scene-3:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
-    
-    .scene-3 h3 {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .scene-3 h5 {
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .scene-3 p {
-        font-size: 12px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
     }
 
     .scene-4 {
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 6;
-        transition: transform .2s; /* Animation */
-    }
-
-    .scene-4:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
-    
-    .scene-4 h3 {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .scene-4 h5 {
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .scene-4 p {
-        font-size: 12px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
     }
 
     }
@@ -1336,14 +1190,17 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 1;
         grid-column-end: 5;
         grid-row-start: 2;
-        transition: transform .2s; /* Animation */
     }
 
-    .series-1:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    .series {
+        transition: all .4s ease;
     }
 
-    .series-1 h3 {
+    .series:hover {
+        transform: scale(1.05);
+    }
+
+    .series h3 {
         grid-column-start: 2;
         grid-column-end: 3;
         font-size: 14px;
@@ -1351,13 +1208,13 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         font-family: 'Libre Franklin', sans-serif;
     }
 
-    .series-1 h5 {
+    .series h5 {
         font-size: 14px;
         margin: .25em auto;
         font-family: 'Libre Franklin', sans-serif;
     }
 
-    .series-1 p {
+    .series p {
         font-size: 12px;
         margin: .25em auto;
         font-family: 'Libre Franklin', sans-serif;
@@ -1366,103 +1223,28 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     .series-2 {
         grid-column-start: 8;
         grid-column-end: 14;
-        transition: transform .2s; /* Animation */
-    }
-
-    .series-2:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
-
-    .series-2 h3 {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .series-2 h5 {
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .series-2 p {
-        font-size: 12px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
     }
     
     .series-3 {
         grid-column-start: 13;
         grid-column-end: 17;
         grid-row-start: 4;
-        transition: transform .2s; /* Animation */
-    }
-
-    .series-3:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
-    
-    .series-3 h3 {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .series-3 h5 {
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .series-3 p {
-        font-size: 12px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
     }
 
     .series-4 {
         grid-column-start: 4;
         grid-column-end: 10;
         grid-row-start: 6;
-        transition: transform .2s; /* Animation */
-    }
-
-    .series-4:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
-    
-    .series-4 h3 {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .series-4 h5 {
-        font-size: 14px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
-    }
-
-    .series-4 p {
-        font-size: 12px;
-        margin: .25em auto;
-        font-family: 'Libre Franklin', sans-serif;
     }
 
     .series-about {
         grid-column: 7/11;
         grid-row-start: 4;
-        transition: transform .2s; /* Animation */
+        transition: all .4s ease;
     }
 
     .series-about:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        transform: scale(1.2);
     }
     
     .series-about h3 {
