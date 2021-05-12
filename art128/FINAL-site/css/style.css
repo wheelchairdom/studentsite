@@ -831,12 +831,31 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     font-size: 5em;
     padding: 0.15em 0em 0em 2em;
     font-family: 'EB Garamond', serif;
-    margin: .1em 0;
-    transition: transform .2s; /* Animation */
+    margin: .1em 0 0 0;
+    transition: all .4s ease;
+}
+
+.menu.item.two p {
+    font-size: 1em;
+    padding: 0em 0em 0em 15em;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0em 0;
+    color: rgba(0, 0, 0, .8);
+}
+
+.menu.item.two .desc {
+    opacity: 0;
+    transition: all .4s ease .2s;
 }
 
 .menu.item.two h1:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    /* padding: 30px 20px 20px; */
+    /* background: rgba(0, 0, 0, 0.7); */
+    transform: scale(1.05);
+}
+
+.menu.item.two:hover .desc {
+    opacity: 1;
 }
 
 .menu.item.three h1 {
@@ -844,12 +863,33 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     padding: 0em 2em 0em 0em;
     text-align: right;
     font-family: 'Josefin Sans', sans-serif;
-    margin: .1em 0;
-    transition: transform .2s; /* Animation */
+    margin: 0em 0;
+    transition: all .4s ease;
+}
+
+.menu.item.three p {
+    font-size: 1em;
+    padding: 0em 11em 0em 0em;
+    text-align: right;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0em 0;
+    color: rgba(0, 0, 0, .8);
+    max-width: none;
+}
+
+.menu.item.three .desc {
+    opacity: 0;
+    transition: all .4s ease .2s;
 }
 
 .menu.item.three h1:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    /* padding: 30px 20px 20px; */
+    /* background: rgba(0, 0, 0, 0.7); */
+    transform: scale(1.05);
+}
+
+.menu.item.three:hover .desc {
+    opacity: 1;
 }
 
 .menu.item.four h1 {
@@ -858,12 +898,33 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     text-align: left;
     font-family: 'Jura', sans-serif;
     font-style: italic;
-    margin: .1em 0;
-    transition: transform .2s; /* Animation */
+    margin: 0em 0;
+    transition: all .4s ease;
+}
+
+.menu.item.four p {
+    font-size: 1em;
+    padding: 0em 0em 0em 25em;
+    text-align: left;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0em 0;
+    color: rgba(0, 0, 0, .8);
+    max-width: none;
+}
+
+.menu.item.four .desc {
+    opacity: 0;
+    transition: all .4s ease .2s;
 }
 
 .menu.item.four h1:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    /* padding: 30px 20px 20px; */
+    /* background: rgba(0, 0, 0, 0.7); */
+    transform: scale(1.05);
+}
+
+.menu.item.four:hover .desc {
+    opacity: 1;
 }
 
 .menu.item.five h1 {
@@ -871,12 +932,33 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
     padding: 0em 1em 0em 0em;
     text-align: right;
     font-family: 'Gloria Hallelujah', cursive;
-    margin: .1em 0em .5em 0em;
-    transition: transform .2s; /* Animation */
+    margin: 0em 0em 0em 0em;
+    transition: all .4s ease;
+}
+
+.menu.item.five p {
+    font-size: 1em;
+    padding: 0em 1em 0em 0em;
+    text-align: right;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0em 0em .5em 0em;
+    color: rgba(0, 0, 0, .8);
+    max-width: none;
+}
+
+.menu.item.five .desc {
+    opacity: 0;
+    transition: all .4s ease .2s;
 }
 
 .menu.item.five h1:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    /* padding: 30px 20px 20px; */
+    /* background: rgba(0, 0, 0, 0.7); */
+    transform: scale(1.05);
+}
+
+.menu.item.five:hover .desc {
+    opacity: 1;
 }
 
 /* .hero h1 {
@@ -1294,12 +1376,23 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 1;
         grid-column-end: 6;
         grid-row-start: 1;
-        transition: transform .2s; /* Animation */
     }
 
-    .connect-1:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    .connect {
+        transition: all .4s ease;
     }
+
+    .connect .desc {
+        opacity: 0;
+        transition: all .4s ease .2s;
+    }
+    
+    .connect:hover {
+        /* padding: 30px 20px 20px; */
+        /* background: rgba(0, 0, 0, 0.7); */
+        transform: scale(1.05);
+    }
+
 
     .connect-1 h3 {
         grid-column-start: 2;
@@ -1325,12 +1418,8 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 1;
         grid-column-end: 6;
         grid-row-start: 4;
-        transition: transform .2s; /* Animation */
     }
 
-    .connect-2:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
 
     .connect-2 h3 {
         grid-column-start: 2;
@@ -1356,12 +1445,8 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 12;
         grid-column-end: 17;
         grid-row-start: 1;
-        transition: transform .2s; /* Animation */
     }
 
-    .connect-3:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
     
     .connect-3 h3 {
         grid-column-start: 2;
@@ -1387,12 +1472,8 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column-start: 12;
         grid-column-end: 17;
         grid-row-start: 4;
-        transition: transform .2s; /* Animation */
     }
 
-    .connect-4:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
     
     .connect-4 h3 {
         grid-column-start: 2;
@@ -1418,12 +1499,8 @@ section.hero.superlightgrey, section.hero.lightgrey, section.hero.darkgrey {
         grid-column: 6/12;
         grid-row-start: 1;
         width: 100%;
-        transition: transform .2s; /* Animation */
     }
 
-    .connect-5:hover {
-        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
     
     .connect-5 h3 {
         grid-column-start: 2;
