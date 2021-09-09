@@ -150,6 +150,11 @@ blockquote cite:before {
   font-weight: normal;
   clear: both; }
 
+.hanging_indent {
+  text-indent: -.5em;
+  text-indent: -1ch;
+}
+
 /* HORIZONTAL RULES */
 hr {
   border: 0;
